@@ -7,7 +7,7 @@ while(isNaN(edad)){
     edad = prompt('Ingresa una edad válida');
 }
 
-if (edad>=18 || edad<=100){
+if (edad>=18 && edad<=100){
     alert('Si puedes conducir');
 }else{
     alert('No puedes conducir');
