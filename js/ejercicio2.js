@@ -42,30 +42,3 @@ switch(true){
         alert(`Nota ${nota} : Sobresaliente`);
         break;
 }
-
-// let nota = parseFloat(prompt("Ingrese la nota (de 0 a 10):"));
-
-// switch (true) {
-  
-//   case nota <= 2:
-//     alert("Muy deficiente");
-//     break;
-//   case nota <= 4:
-//     alert("Insuficiente");
-//     break;
-//   case nota <= 6:
-//     alert("Suficiente");
-//     break;
-//   case nota == 7:
-//     alert("Bien");
-//     break;
-//   case nota <= 9:
-//     alert("Notable");
-//     break;
-//   case nota == 10:
-//     alert("Sobresaliente");
-//     break;
-//   default:
-//     alert("Error desconocido");
-//     break;
-// }
