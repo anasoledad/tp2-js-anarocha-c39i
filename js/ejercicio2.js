@@ -15,10 +15,10 @@ let nota = parseInt(prompt('Ingrese una nota del 0 al 10'));
 while(isNaN(nota) || nota>10){
     if(isNaN(nota)){
         alert('El valor ingresado no es un número');
-        nota = prompt('Ingresa una nota válida');
+        nota = parseInt(prompt('Ingresa una nota válida del 0 al 10'));
     }else{
         alert('Número erroneo');
-        nota = prompt('Ingresa una nota válida');
+        nota = parseInt(prompt('Ingresa una nota válida del 0 al 10'));
     }  
 }
 
@@ -32,7 +32,7 @@ switch(true){
     case nota<=6:
         alert(`Nota ${nota} : Suficiente`);
         break;
-    case 7:
+    case nota<=7:
         alert(`Nota ${nota} : Bien`);
         break;
     case nota<=9:
