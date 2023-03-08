@@ -3,27 +3,19 @@
 // guión -.
 // Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
 
+let cadenas = '';
+let continuar = true;
 
-
-
-let cadenas = [];
-let agregar = true;
-while (agregar) {
+while (continuar) {
   let texto = prompt("Escriba un texto");
 
   if (texto === null) { 
-    agregar = confirm("¿Está seguro que desea cancelar?");
-    if(agregar=true){
-      break;
-    }
-  }else{
-    cadenas.push(texto);
-    
+      break; 
   }
+  
+  cadenas+=texto+'-';
+
+  continuar = confirm("¿Quieres introducir otra cadena?");
 }
 
 alert(cadenas);
-
-
-
-// alert(cadenas); 
